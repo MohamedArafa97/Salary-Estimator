@@ -25,10 +25,10 @@ This project focuses on building a salary estimator system for tech jobs based o
 ## Code Files
 
 1. **`glassdoor_scraper`:** Web scraping job data from Glassdoor using Selenium.
-   - `01_data_collection:` Implementation of Glassdoor scraper, scraped 1000 job postings.
-   - `02_data_cleaning:` Cleaning the Glassdoor Jobs dataset for further analysis and modeling.
-   - `03_EDA:` Exploring and visualizing key aspects of the Glassdoor Jobs dataset.
-   - `04_model_building:` Building a salary estimation model using the Glassdoor Jobs dataset.
+2. **`01_data_collection`:** Implementation of Glassdoor scraper, scraped 1000 job postings.
+3. **`02_data_cleaning`:** Cleaning the Glassdoor Jobs dataset for further analysis and modeling.
+4. **`03_EDA`:** Exploring and visualizing key aspects of the Glassdoor Jobs dataset.
+5. **`04_model_building`:** Building a salary estimation model using the Glassdoor Jobs dataset.
 
 ## Figures
 
