@@ -1,59 +1,63 @@
-Salary Estimator 
-Overview
-This project focuses on building a salary estimator system for tech jobs based on the current market salary trends. Market salaries were scrapped from glassdoor focusing on data related job positions. data cleaning, EDA were done before model building. 
-Feature Selection, Data Preprocessing were done before implemtned ML modles , Multiple model were implemented to choose the best performer 
-
-Linear Regression:**
-   - Linear regression models are built using both statsmodel and sklearn.
-
-6. **Lasso Regression:**
-   - Baseline Lasso regression is performed, followed by hyperparameter tuning using GridSearchCV.
-
-7. **Random Forest Regression:**
-   - A Random Forest regression model is built and evaluated. Hyperparameter tuning is performed using RandomizedSearchCV.
-
-8. **Ensemble Testing:**
-   - The model's predictions are tested using various ensembles, including Linear Regression, Lasso Regression, and Random Forest Regression.
-
-Data Files
-•	glassdoor_jobs.csv: Information scrapped from glassdoww containing salaries for different job posting as well as information about the companies , domain , location …etc.
-•	processed_df.csv: processed glassdoor_jobs.csv after data cleaning process 
-•	EDA_glassdoor_jobs.csv: glassdoor_jobs after further processing for EDA.
-Code Files
-glassdoor_scraper: web scraping job data from Glassdoor using Selenium. The scraper gathers information such as job title, salary estimate, job description, company details, and more.
-
-•	01_data_collection: Implementation of glassdoor scrapper , scrapped 1000 job postings.
-•	02_data_cleaning: cleaning the Glassdoor Jobs dataset for further analysis and modeling. The dataset is loaded, and various data cleaning and preprocessing steps are performed to enhance the quality and usability of the data.
-•	03_EDA: exploring and visualizing key aspects of the Glassdoor Jobs dataset. The dataset includes information about company ratings, average salaries, company sizes, and other relevant features.
-•	04_model_building: Building a salary estimation model using the Glassdoor Jobs dataset.Various machine learning models are trained and evaluated for predicting average salaries. The models include Linear Regression, Lasso Regression, and Random Forest Regression.
-Figures
-•	Various images generated during EDA for better visualization and understanding.
-Selenium Web Scrapper
+# Salary Estimator
 
 ## Overview
+
+This project focuses on building a salary estimator system for tech jobs based on the current market salary trends. Market salaries were scraped from Glassdoor, focusing on data-related job positions. Data cleaning, EDA were done before model building. Feature Selection, Data Preprocessing were done before implementing ML models. Multiple models were implemented to choose the best performer.
+
+1. **Linear Regression:**
+   - Linear regression models are built using both statsmodel and sklearn.
+
+2. **Lasso Regression:**
+   - Baseline Lasso regression is performed, followed by hyperparameter tuning using GridSearchCV.
+
+3. **Random Forest Regression:**
+   - A Random Forest regression model is built and evaluated. Hyperparameter tuning is performed using RandomizedSearchCV.
+
+4. **Ensemble Testing:**
+   - The model's predictions are tested using various ensembles, including Linear Regression, Lasso Regression, and Random Forest Regression.
+
+## Data Files
+
+- `glassdoor_jobs.csv`: Information scraped from Glassdoor containing salaries for different job postings as well as information about the companies, domain, location, etc.
+- `processed_df.csv`: Processed `glassdoor_jobs.csv` after the data cleaning process.
+- `EDA_glassdoor_jobs.csv`: Glassdoor_jobs after further processing for EDA.
+
+## Code Files
+
+1. **`glassdoor_scraper`:** Web scraping job data from Glassdoor using Selenium.
+   - `01_data_collection:` Implementation of Glassdoor scraper, scraped 1000 job postings.
+   - `02_data_cleaning:` Cleaning the Glassdoor Jobs dataset for further analysis and modeling.
+   - `03_EDA:` Exploring and visualizing key aspects of the Glassdoor Jobs dataset.
+   - `04_model_building:` Building a salary estimation model using the Glassdoor Jobs dataset.
+
+## Figures
+
+Various images generated during EDA for better visualization and understanding.
+
+## Selenium Web Scraper
+
+### Overview
 
 This project involves web scraping job data from Glassdoor using Selenium. The scraper gathers information such as job title, salary estimate, job description, company details, and more.
 
-### Author
-	Although multiple tweaKS WERE made on the original code however, original author must be credited
+#### Author
+
+Although multiple tweaks were made on the original code, the original author must be credited.
 - Original Author: Kenarapfaik
 - GitHub: [scraping-glassdoor-selenium](https://github.com/arapfaik/scraping-glassdoor-selenium)
 
+- Scraped 1000 job postings on Glassdoor.
+- The script uses Selenium to automate browser interactions.
+- It navigates through job listings, clicks on each job to gather details, and stores the information in a Pandas DataFrame.
+- Information gathered includes 'Job Title', 'Salary Estimate', 'Job Description', 'Rating', 'Company Name', 'Location', 'size', 'type', 'founded', 'industry', 'sector', 'company_revenue', company’s other perks, and work environment.
 
-•	Scrapper 1000 job posting on glassdooe 
-•	The script uses Selenium to automate browser interactions.
-•	It navigates through job listings, clicks on each job to gather details, and stores the information in a Pandas DataFrame.
-•	Information gathers are 'Job Title', 'Salary Estimate', 'Job Description', 'Rating',
-•	       'Company Name', 'Location', 'size', 'type', 'founded', 'industry',
-•	       'sector', 'company_revenue', company’s other perks and work environment 
-Data Cleaning and processing
+## Data Cleaning and Processing
 
-## Overview
+### Overview
 
-focuses on cleaning the Glassdoor Jobs dataset for further analysis and modeling. The dataset is loaded, and various data cleaning and preprocessing steps are performed to enhance the quality and usability of the data.
+Focuses on cleaning the Glassdoor Jobs dataset for further analysis and modeling. The dataset is loaded, and various data cleaning and preprocessing steps are performed to enhance the quality and usability of the data.
 
-
-Data Cleaning Steps
+### Data Cleaning Steps
 
 1. **Salary Estimate Parsing:**
    - The 'Salary Estimate' column is parsed to extract meaningful salary information.
@@ -72,7 +76,7 @@ Data Cleaning Steps
    - Tech-related requirements are identified and stored in binary columns (e.g., Python, Excel, Spark, AWS, SQL, etc.).
 
 6. **Job Title and Seniority:**
-   - The 'Job Title' column is simplified and a new 'jobtitle_simp' column is created.
+   - The 'Job Title' column is simplified, and a new 'jobtitle_simp' column is created.
    - Seniority level is identified and stored in a new 'seniority' column.
 
 7. **Fix States Names:**
@@ -87,60 +91,51 @@ Data Cleaning Steps
 10. **Cleaned Dataset:**
     - The cleaned dataset is saved as 'processed_df.csv' in the `data/processed` directory.
 
-Explortory Data Analysis
+## Exploratory Data Analysis
 
-## Overview
+### Overview
 
-EDA focuses on exploring and visualizing key aspects of the Glassdoor Jobs dataset. 
+EDA focuses on exploring and visualizing key aspects of the Glassdoor Jobs dataset.
 
+### Summary of EDA
 
-## Summary of EDA
+All EDA plots and figures can be accessed from “reports/figures”.
 
-All EDA plots and figures can be accessed from “reports/figures”
+1. **Companies Rating Distribution:**
+   - A histogram is plotted to visualize the distribution of company ratings.
+   - The plot is saved as `companies_rating_dist.png`.
 
-### Companies Rating Distribution
+2. **Average Salary Distribution:**
+   - A histogram is plotted to visualize the distribution of average salaries.
+   - The plot is saved as `average_salary_dist.png`.
 
-- A histogram is plotted to visualize the distribution of company ratings.
-- The plot is saved as `companies_rating_dist.png`.
+3. **Average Salary Boxplot:**
+   - A boxplot is created to visualize the distribution of average salaries.
+   - The plot is saved as `average_salary_boxplot.png`.
 
-### Average Salary Distribution
+4. **Bar Plot for Company Size:**
+   - A horizontal bar plot is generated to show the distribution of average salaries based on company size.
+   - The plot is saved as `company_size_barplot.html`.
 
-- A histogram is plotted to visualize the distribution of average salaries.
-- The plot is saved as `average_salary_dist.png`.
+5. **Bar Plot for Average Salary per Company Size:**
+   - A horizontal bar plot is created to display the average salary for each company size category.
+   - The plot is saved as `salary_company_size_Barplot.html`.
 
-### Average Salary Boxplot
+6. **Correlation Heatmap:**
+   - A heatmap is generated to display the correlation between numerical features such as company age, average salary, and company rating.
+   - The plot is saved as `heatmap.html`.
 
-- A boxplot is created to visualize the distribution of average salaries.
-- The plot is saved as `average_salary_boxplot.png`.
+7. **Bar Charts for Categorical Variables:**
+   - Bar charts are created for each categorical variable, displaying their frequency.
+   - The charts are saved as individual PNG files in the specified directory.
 
-### Bar Plot for Company Size
+## Model Building
 
-- A horizontal bar plot is generated to show the distribution of average salaries based on company size.
-- The plot is saved as `company_size_barplot.html`.
+### Overview
 
-### Bar Plot for Average Salary per Company Size
+Focuses on building a salary estimation model using the Glassdoor Jobs dataset. The dataset is loaded and processed, and various machine learning models are trained and evaluated for predicting average salaries. The models include Linear Regression, Lasso Regression, and Random Forest Regression.
 
-- A horizontal bar plot is created to display the average salary for each company size category.
-- The plot is saved as `salary_company_size_Barplot.html`.
-
-### Correlation Heatmap
-
-- A heatmap is generated to display the correlation between numerical features such as company age, average salary, and company rating.
-- The plot is saved as `heatmap.html`.
-
-### Bar Charts for Categorical Variables
-
-- Bar charts are created for each categorical variable, displaying their frequency.
-- The charts are saved as individual PNG files in the specified directory.
-
-
-Model Building
-
-## Overview
-
-focuses on building a salary estimation model using the Glassdoor Jobs dataset. The dataset is loaded and processed, and various machine learning models are trained and evaluated for predicting average salaries. The models include Linear Regression, Lasso Regression, and Random Forest Regression.
-
-## Model Building Steps
+### Model Building Steps
 
 1. **Data Loading:**
    - The cleaned dataset is loaded for model building.
@@ -168,7 +163,7 @@ focuses on building a salary estimation model using the Glassdoor Jobs dataset. 
 
 9. **Model Serialization:**
    - The best-performing Random Forest model is serialized using Pickle for future use.
-
+  
 
 Project Organization
 ------------
